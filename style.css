@@ -63,7 +63,13 @@ body {
   max-width: 1400px;
 }
 
-.green {
+p {
+  color: #444;
+  line-height: 1.4;
+}
+
+.green,
+.current {
   color: #9ffcdb;
 }
 
@@ -95,12 +101,18 @@ h1 {
   }
 }
 
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 5vw;
+  }
+}
+
 header {
   border-bottom: solid 3px #9ffcdb;
   display: flex;
   position: relative;
   justify-content: center;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0rem;
   background-color: #182235;
   z-index: 5;
 }
@@ -110,11 +122,23 @@ header {
   font-weight: 400;
   font-size: 2.2vw;
   line-height: 1.5;
+  max-width: 45%;
 }
 
 @media screen and (max-width: 790px) {
+  .hero {
+    min-height: 70vh !important;
+  }
   #hero-sub {
     font-size: 4.7vw;
+    margin-top: -0.2rem;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero-sub {
+    font-size: 1.4vw;
     margin-top: -0.2rem;
   }
 }
@@ -140,6 +164,11 @@ header {
   font-weight: 400;
   letter-spacing: 0px;
   align-items: center;
+}
+
+#logo a {
+  color: white;
+  text-decoration: none;
 }
 
 nav {
@@ -173,7 +202,7 @@ main {
 }
 
 .hero {
-  padding: 2vh 1rem;
+  padding: 2vh 0rem;
   min-height: 90vh;
   overflow: hidden;
   display: flex;
@@ -194,6 +223,14 @@ main {
   padding-bottom: 5vh;
 }
 
+.mg-left {
+  margin-left: 2.2rem;
+}
+
+.section-sub-title {
+  margin: -0.95rem 1rem 0rem 2.2rem;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -208,4 +245,36 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 300px;
+}
+
+.contact-item {
+  background-color: #18223509;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  border: solid 1px white;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+  background-color: #9ffcdb;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  /* border: solid 1px #18223515; */
+}
+
+#email a,
+#github a {
+  opacity: 0; /* Initially hide the email link */
+  color: #182235;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease-in-out; /* Apply transition effect to opacity */
+}
+
+.about {
+  max-width: 700px;
 }
