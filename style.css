@@ -218,6 +218,16 @@ main {
   padding: 10vh 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  #portfolio-container {
+    padding: 8vh 0rem;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
 .section-title {
   font-size: 1.5rem;
   padding-bottom: 5vh;
@@ -235,6 +245,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .portfolio-item {
