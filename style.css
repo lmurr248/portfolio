@@ -1,0 +1,211 @@
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-Black.woff2");
+  format: "woff";
+  font-weight: 900;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-ExtraBold.woff2");
+  format: "woff";
+  font-weight: 800;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-Bold.woff2");
+  format: "woff";
+  font-weight: 700;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-SemiBold.woff2");
+  format: "woff";
+  font-weight: 600;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-Medium.woff2");
+  format: "woff";
+  font-weight: 500;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-Regular.woff2");
+  format: "woff";
+  font-weight: 400;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-Light.woff2");
+  format: "woff";
+  font-weight: 300;
+}
+@font-face {
+  font-family: ThicccBoi;
+  src: url("fonts/THICCCBOI-Thin.woff2");
+  format: "woff";
+  font-weight: 200;
+}
+
+html {
+  font-family: "Thicccboi", "Lato", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #182235;
+  color: #ffffff;
+}
+
+.mx-width {
+  width: 90%;
+  max-width: 1400px;
+}
+
+.green {
+  color: #9ffcdb;
+}
+
+.fs-800 {
+  font-weight: 800;
+}
+
+.fs-900 {
+  font-weight: 900;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 8vw;
+  font-weight: 600;
+  line-height: 1;
+}
+
+@media screen and (max-width: 790px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+header {
+  border-bottom: solid 3px #9ffcdb;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 0.25rem 1rem;
+  background-color: #182235;
+  z-index: 5;
+}
+
+#hero-sub {
+  margin-top: -1.5rem;
+  font-weight: 400;
+  font-size: 2.2vw;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 790px) {
+  #hero-sub {
+    font-size: 4.7vw;
+    margin-top: -0.2rem;
+  }
+}
+
+.square {
+  border: solid 2px rgba(255, 255, 255, 0.119);
+  height: 100%;
+  min-width: 100%;
+  position: absolute;
+  display: flex;
+  right: 200px;
+  top: 0px;
+  transform: rotate(70deg);
+  background-color: #ffffff07;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-weight: 400;
+  letter-spacing: 0px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.15rem;
+  transition: color 0.3s ease-in-out;
+}
+
+li a:hover {
+  color: #9ffcdb;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 2vh 1rem;
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Portfolio Section */
+
+#portfolio-container {
+  min-height: 400px;
+  color: #182235;
+  padding: 10vh 1rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  padding-bottom: 5vh;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.portfolio-item {
+  background-color: #18223509;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
